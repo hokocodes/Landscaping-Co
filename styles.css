@@ -1,0 +1,364 @@
+/* CSS code for styling the website */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  justify-content:center;
+  align-items:center;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  height: 100px; 
+  top: 0;
+  transition: top 0.3s;
+  width: 100%;
+  position: fixed;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#navbar a:hover {
+  background-color: #555;
+}
+
+#logo {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  top: 15px;
+  transition: top 0.3s;
+}
+
+.logoText {
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 3;
+}
+
+.touch {
+  padding: 60px;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1589496933738-f5c27bc146e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.touch button {
+  justify-content: center;
+  margin:auto;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.touch h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.services button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 300px;
+  right: 200px;
+}
+
+button:hover {
+  background-color: limegreen;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+
+
+/* Slideshow container */
+.services {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Hide the images by default */
+.service {
+  display: none;
+}
+
+.service img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.service h3 {
+  color: #f2f2f2;
+  font-size: 100px;
+  text-align: center;
+  background-color: rgba(50, 205, 50, 0.4);
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  padding: 50px 12px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.contactFooter {
+  font-size: 30px;
+  padding: 25px;
+}
+
+.learnMore {
+  display: grid;
+  grid-template-columns: 300px 500px;
+  justify-content: end;
+  width: 75%;
+  margin:auto;
+  padding: 150px;
+}
+
+.learnMoreInner {
+  margin: auto;
+  text-align: center;
+  
+}
+
+#video {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(97, 97, 97);
+  color: black;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+}
+
+#video h2 {
+  display: inline;
+  float: none;
+}
+
+.mainPic img {
+  height: 375px;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body {
+  font-family: 'Poppins', Calibri, Tahoma, sans-serif;
+  
+}
+
+.main {
+  padding: 150px;
+  width: 75%;
+  margin: auto;
+}
+
+#serviceHeader {
+  font-size: 60px;
+  width: 75%;
+  margin: auto;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto auto;
+  padding: 150px;
+  justify-content: end;
+  gap: 50px;
+}
+
+.serviceGrid button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+}
+
+.serviceGrid h2 {
+  font-size: 22;
+}
+
+.serviceGrid img {
+  width: 50px;
+}
+
+.serviceGrid {
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Poppins', Calibri, Tahoma, sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactInfo button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: auto;
+  justify-content: end;
+  gap: 50px;
+  width: 75%;
+  font-family: 'Poppins', Calibri, Tahoma, sans-serif;
+  font-size: 18px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.contact h1 {
+  line-height: 0.1;
+}
+
+.faq {
+  padding: 150px;
+  margin: auto;
+  width: 75%;
+}
+
+.faq h1 {
+  font-size: 75px;
+}
+
+.faqAns {
+  display: none;
+}
